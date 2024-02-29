@@ -1,0 +1,646 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -e 100 -work JL_project -2002  $dsn/src/main.vhd $dsn/src/TestBench/main_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/main.vhd
+# Compile Entity "read_image_VHDL"
+# Compile Architecture "behavioral" of Entity "read_image_VHDL"
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/TestBench/main_TB.vhd
+# Compile Entity "tb_read_image_vhdl"
+# Compile Architecture "behavior" of Entity "tb_read_image_vhdl"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+SetActiveLib -work
+comp -include "$dsn\src\main.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/main.vhd
+# Compile Entity "read_image_VHDL"
+# Compile Architecture "behavioral" of Entity "read_image_VHDL"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+comp -include "$dsn\src\TestBench\main_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/TestBench/main_TB.vhd
+# Compile Entity "tb_read_image_vhdl"
+# Compile Architecture "behavior" of Entity "tb_read_image_vhdl"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+asim +access +r tb_read_image_vhdl
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=4879 kernel=268 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\User\Desktop\AGH\5 sem\PSC\Projekt\JL_project\src\wave.asdb
+#  15:19, wtorek, 6 lutego 2024
+#  Simulation has been initialized
+wave 
+wave -noreg CLR
+# VSIM: No objects matching.
+wave -noreg clock
+wave -noreg data
+wave -noreg rdaddress
+wave -noreg wraddress
+wave -noreg we
+wave -noreg re
+wave -noreg q
+
+run 6000.00 ns     
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/wave.asdb'.
+# KERNEL: stopped at time: 6 us
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\tutorvhdl_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_tutorvhdl 
+SetActiveLib -work
+comp -include "$dsn\src\main.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/main.vhd
+# Compile Entity "read_image_VHDL"
+# Compile Architecture "behavioral" of Entity "read_image_VHDL"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\main_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/TestBench/main_TB.vhd
+# Compile Entity "tb_read_image_vhdl"
+# Compile Architecture "behavior" of Entity "tb_read_image_vhdl"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim +access +r read_image_vhdl
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5572 kB (elbread=427 elab2=4876 kernel=268 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\User\Desktop\AGH\5 sem\PSC\Projekt\JL_project\src\wave.asdb
+#  15:22, wtorek, 6 lutego 2024
+#  Simulation has been initialized
+wave 
+wave -noreg CLR
+# VSIM: No objects matching.
+wave -noreg clock
+wave -noreg data
+wave -noreg rdaddress
+wave -noreg wraddress
+wave -noreg we
+wave -noreg re
+wave -noreg q     
+run 6000.00 ns     
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/wave.asdb'.
+# KERNEL: stopped at time: 6 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\tutorvhdl_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_tutorvhdl 
+# VSIM: 1 object(s) traced.
+acom -O3 -e 100 -work JL_project -2002  $dsn/src/main.vhd $dsn/src/TestBench/main_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/main.vhd
+# Compile Entity "read_image_VHDL"
+# Compile Architecture "behavioral" of Entity "read_image_VHDL"
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/TestBench/main_TB.vhd
+# Compile Entity "tb_read_image_vhdl"
+# Compile Architecture "behavior" of Entity "tb_read_image_vhdl"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+SetActiveLib -work
+comp -include "$dsn\src\main.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/main.vhd
+# Compile Entity "read_image_VHDL"
+# Compile Architecture "behavioral" of Entity "read_image_VHDL"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+comp -include "$dsn\src\TestBench\main_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/TestBench/main_TB.vhd
+# Compile Entity "tb_read_image_vhdl"
+# Compile Architecture "behavior" of Entity "tb_read_image_vhdl"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+asim +access +r tb_read_image_vhdl
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=4879 kernel=268 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\User\Desktop\AGH\5 sem\PSC\Projekt\JL_project\src\wave.asdb
+#  15:22, wtorek, 6 lutego 2024
+#  Simulation has been initialized
+wave 
+wave -noreg CLR
+# VSIM: No objects matching.
+wave -noreg clock
+wave -noreg data
+wave -noreg rdaddress
+wave -noreg wraddress
+wave -noreg we
+wave -noreg re
+wave -noreg q     
+run 6000.00 ns     
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/wave.asdb'.
+# KERNEL: stopped at time: 6 us
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\tutorvhdl_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_tutorvhdl 
+SetActiveLib -work
+comp -include "$dsn\src\main.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/main.vhd
+# Compile Entity "read_image_VHDL"
+# Compile Architecture "behavioral" of Entity "read_image_VHDL"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\TestBench\main_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/TestBench/main_TB.vhd
+# Compile Entity "tb_read_image_vhdl"
+# Compile Architecture "behavior" of Entity "tb_read_image_vhdl"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim +access +r tb_read_image_vhdl
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=4879 kernel=268 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\User\Desktop\AGH\5 sem\PSC\Projekt\JL_project\src\wave.asdb
+#  15:28, wtorek, 6 lutego 2024
+#  Simulation has been initialized
+wave 
+
+wave -noreg clock
+wave -noreg data
+wave -noreg rdaddress
+wave -noreg wraddress
+wave -noreg we
+wave -noreg re
+wave -noreg q     
+wave -noreg ram_block
+# VSIM: No objects matching.
+
+run 6000.00 ns     
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/wave.asdb'.
+# KERNEL: stopped at time: 6 us
+run
+endsim
+# KERNEL: stopped at time: 12299900 ns
+# VSIM: Simulation has finished.
+SetActiveLib -work
+comp -include "$dsn\src\main.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/main.vhd
+# Compile Entity "read_image_VHDL"
+# Compile Architecture "behavioral" of Entity "read_image_VHDL"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+comp -include "$dsn\src\TestBench\main_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/TestBench/main_TB.vhd
+# Compile Entity "tb_read_image_vhdl"
+# Compile Architecture "behavior" of Entity "tb_read_image_vhdl"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+asim +access +r tb_read_image_vhdl
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=4879 kernel=268 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\User\Desktop\AGH\5 sem\PSC\Projekt\JL_project\src\wave.asdb
+#  15:30, wtorek, 6 lutego 2024
+#  Simulation has been initialized
+wave 
+
+wave -noreg clock
+wave -noreg data
+wave -noreg rdaddress
+wave -noreg wraddress
+wave -noreg we
+wave -noreg re
+wave -noreg q     
+wave -noreg ram_block
+# VSIM: No objects matching.
+
+run 6000.00 ns     
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/wave.asdb'.
+# KERNEL: stopped at time: 6 us
+run
+endsim
+# KERNEL: stopped at time: 25694785 ns
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+tb_read_image_vhdl tb_read_image_vhdl behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=4879 kernel=268 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\User\Desktop\AGH\5 sem\PSC\Projekt\JL_project\src\wave.asdb
+#  15:32, wtorek, 6 lutego 2024
+#  Simulation has been initialized
+run
+# KERNEL: stopped at time: 37196690 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+tb_read_image_vhdl tb_read_image_vhdl behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=4879 kernel=268 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\User\Desktop\AGH\5 sem\PSC\Projekt\JL_project\src\wave.asdb
+#  15:33, wtorek, 6 lutego 2024
+#  Simulation has been initialized
+run
+endsim
+# KERNEL: stopped at time: 5929225 ns
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+tb_read_image_vhdl tb_read_image_vhdl behavior
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=4879 kernel=268 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\User\Desktop\AGH\5 sem\PSC\Projekt\JL_project\src\wave.asdb
+#  15:33, wtorek, 6 lutego 2024
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=4879 kernel=268 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\User\Desktop\AGH\5 sem\PSC\Projekt\JL_project\src\wave.asdb
+#  15:34, wtorek, 6 lutego 2024
+#  Simulation has been initialized
+run 10 ns
+# KERNEL: stopped at time: 10 ns
+run 10 ns
+# KERNEL: stopped at time: 20 ns
+run 10 ns
+# KERNEL: stopped at time: 30 ns
+run 10 ns
+# KERNEL: stopped at time: 40 ns
+run 10 ns
+# KERNEL: stopped at time: 50 ns
+run 10 ns
+# KERNEL: stopped at time: 60 ns
+run 10 ns
+# KERNEL: stopped at time: 70 ns
+run 10 ns
+# KERNEL: stopped at time: 80 ns
+run 10 ns
+# KERNEL: stopped at time: 90 ns
+run 10 ns
+# KERNEL: stopped at time: 100 ns
+run 10 ns
+# KERNEL: stopped at time: 110 ns
+run 10 ns
+# KERNEL: stopped at time: 120 ns
+run 10 ns
+# KERNEL: stopped at time: 130 ns
+run 10 ns
+# KERNEL: stopped at time: 140 ns
+run 10 ns
+# KERNEL: stopped at time: 150 ns
+run 10 ns
+# KERNEL: stopped at time: 160 ns
+run 10 ns
+# KERNEL: stopped at time: 170 ns
+run 10 ns
+# KERNEL: stopped at time: 180 ns
+run 10 ns
+# KERNEL: stopped at time: 190 ns
+run 10 ns
+# KERNEL: stopped at time: 200 ns
+run 10 ns
+# KERNEL: stopped at time: 210 ns
+run 10 ns
+# KERNEL: stopped at time: 220 ns
+run 10 ns
+# KERNEL: stopped at time: 230 ns
+run 10 ns
+# KERNEL: stopped at time: 240 ns
+run 10 ns
+# KERNEL: stopped at time: 250 ns
+run 10 ns
+# KERNEL: stopped at time: 260 ns
+run 10 ns
+# KERNEL: stopped at time: 270 ns
+run 10 ns
+# KERNEL: stopped at time: 280 ns
+run 10 ns
+# KERNEL: stopped at time: 290 ns
+run 10 ns
+# KERNEL: stopped at time: 300 ns
+endsim
+# VSIM: Simulation has finished.
+SetActiveLib -work
+comp -include "$dsn\src\main.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/main.vhd
+# Compile Entity "read_image_VHDL"
+# Compile Architecture "behavioral" of Entity "read_image_VHDL"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\TestBench\main_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/TestBench/main_TB.vhd
+# Compile Entity "tb_read_image_vhdl"
+# Compile Architecture "behavior" of Entity "tb_read_image_vhdl"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+asim +access +r tb_read_image_vhdl
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=4879 kernel=268 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\User\Desktop\AGH\5 sem\PSC\Projekt\JL_project\src\wave.asdb
+#  15:34, wtorek, 6 lutego 2024
+#  Simulation has been initialized
+wave 
+
+wave -noreg clock
+wave -noreg data
+wave -noreg rdaddress
+wave -noreg wraddress
+wave -noreg we
+wave -noreg re
+wave -noreg q     
+wave -noreg ram_block
+# VSIM: No objects matching.
+
+run 6000.00 ns     
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/wave.asdb'.
+# KERNEL: stopped at time: 6 us
+run 10 ns
+# KERNEL: stopped at time: 6010 ns
+run 10 ns
+# KERNEL: stopped at time: 6020 ns
+SetActiveLib -work
+comp -include "$dsn\src\main.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/main.vhd
+# Compile Entity "read_image_VHDL"
+# Compile Architecture "behavioral" of Entity "read_image_VHDL"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+comp -include "$dsn\src\TestBench\main_TB.vhd" 
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/TestBench/main_TB.vhd
+# Compile Entity "tb_read_image_vhdl"
+# Compile Architecture "behavior" of Entity "tb_read_image_vhdl"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+asim +access +r tb_read_image_vhdl
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=4879 kernel=268 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\User\Desktop\AGH\5 sem\PSC\Projekt\JL_project\src\wave.asdb
+#  15:36, wtorek, 6 lutego 2024
+#  Simulation has been initialized
+wave 
+
+wave -noreg clock
+wave -noreg data
+wave -noreg rdaddress
+wave -noreg wraddress
+wave -noreg we
+wave -noreg re
+wave -noreg q     
+wave -noreg ram_block
+# VSIM: No objects matching.
+
+run 10.00 ns     
+# VSIM: 7 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/Users/User/Desktop/AGH/5 sem/PSC/Projekt/JL_project/src/wave.asdb'.
+# KERNEL: stopped at time: 10 ns
+run 10 ns
+# KERNEL: stopped at time: 20 ns
+run 10 ns
+# KERNEL: stopped at time: 30 ns
+run 10 ns
+# KERNEL: stopped at time: 40 ns
+run 10 ns
+# KERNEL: stopped at time: 50 ns
+run 10 ns
+# KERNEL: stopped at time: 60 ns
+run 10 ns
+# KERNEL: stopped at time: 70 ns
+run 10 ns
+# KERNEL: stopped at time: 80 ns
+run 10 ns
+# KERNEL: stopped at time: 90 ns
+run 10 ns
+# KERNEL: stopped at time: 100 ns
+run 10 ns
+# KERNEL: stopped at time: 110 ns
+run 10 ns
+# KERNEL: stopped at time: 120 ns
+run 10 ns
+# KERNEL: stopped at time: 130 ns
+run 10 ns
+# KERNEL: stopped at time: 140 ns
+run 10 ns
+# KERNEL: stopped at time: 150 ns
+run 10 ns
+# KERNEL: stopped at time: 160 ns
+run 10 ns
+# KERNEL: stopped at time: 170 ns
+run 10 ns
+# KERNEL: stopped at time: 180 ns
+run 10 ns
+# KERNEL: stopped at time: 190 ns
+run 10 ns
+# KERNEL: stopped at time: 200 ns
+endsim
+# VSIM: Simulation has finished.

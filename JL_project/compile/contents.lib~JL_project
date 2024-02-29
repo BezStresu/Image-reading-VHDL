@@ -1,0 +1,5 @@
+22
+~E 1 "../src/main.vhd" 7 read_image_VHDL
+~A 1 "../src/main.vhd" 24 behavioral
+~E 1 "../src/TestBench/main_TB.vhd" 6 tb_read_image_vhdl
+~A 1 "../src/TestBench/main_TB.vhd" 8 behavior
